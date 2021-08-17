@@ -1,78 +1,82 @@
 
 body {
-font-family: monospace;
-text-decoration: none;
+	font-family: monospace;
+	text-decoration: none;
 
- margin: 0;
- padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 
 .field  {
-height: 705px;
-width: 405px;
-margin-top: 20px;
-margin-left: 50px;
- background: lightgray;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+	height: 705px;
+	width: 405px;
+	margin-top: 20px;
+	margin-left: 50px;
+	background: lightgray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .row1{
-height: 200px;
-width: 400px;
-display: flex;
-align-items: center;
-justify-content: center;
-justify-content: space-around;
+	height: 200px;
+	width: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-around;
 }
 
 .row{
-height: 100px;
-width: 400px;
-display: flex;
-align-items: center;
-justify-content: center;
-justify-content: space-around;
+	height: 100px;
+	width: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-around;
 }
 
 .screen {
-font-size: 30px;
- background: honeydew;
-height: 195px;
-width: 395px;
- display: flex;
-align-items: flex-end;
-justify-content: flex-end;
-color:black;
+	font-size: 30px;
+	background: honeydew;
+	height: 195px;
+	width: 395px;
+	color:black;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	overflow: auto;
+	/* text-align: end; */
+	/* vertical-align: bottom; */
+	
 
--webkit-user-select: none;
--ms-user-select: none;
--moz-user-select: none;
-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
 }
 
 .button {
-font-size: 40px;
-height: 95px;
-width: 95px;
- background: ghostwhite;
- display: flex;
-align-items: center;
-justify-content: center;
+	font-size: 40px;
+	height: 95px;
+	width: 95px;
+	background: ghostwhite;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
--webkit-user-select: none;
--ms-user-select: none;
--moz-user-select: none;
-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
 }
 
 .button:hover {
-	 background: lavender;
+	background: lavender;
 }
 
 .button:active  {
-	 background: white;
+	background: white;
 }
