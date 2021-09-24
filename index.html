@@ -3,51 +3,93 @@
     <head>
 		<meta charset="UTF-8">
 		<title>Калькулятор</title>
+		<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
 		<link rel="stylesheet" href="style.css">
 		<script src="app.js" defer></script>
     </head>
 
     <body>
 
-		<div class="field">
+		<div class="wrapper">
 
-			<div class="row1">
-				<div class="screen" id="screen"></div>
-			</div>
+			<div class="field">
 
-			<div class="row">
-				<div class="button" id="C"> С </div>
-				<div class="button" id="lt"> &lt;= </div>
-				<div class="button" id="rad"> &radic; </div>
-				<div class="button operator" data-action="div"> &#247; </div>
-			</div>
+				<div class="left_field">
 
-			<div class="row">
-				<div class="button number" data-value="7"> 7 </div>
-				<div class="button number" data-value="8"> 8 </div>
-				<div class="button number" data-value="9"> 9 </div>
-				<div class="button operator" data-action="mul"> &#215; </div>
-			</div>
+					<div class="col">
+						<div class="button double_tilda" id="roundUp"> <span class="tilda">~</span> <span class="tilda">~</span> </div>
+						<div class="button operator" data-action="power" id="power"> <span> x<span class="upperline">y</span> </span> </div>
+						<div class="button operator" data-action="log" id="log"> <span> log<span class="underline">x</span> </span> </div>
+						<div class="button operator" data-action="tenPow" id="tenPow"> <span> &#215;10<span class="upperline">x</span> </span> </div>
+						<div class="button operator" data-action="remainder" id="remainder"> .% </div>
+					</div>
 
-			<div class="row">
-				<div class="button number" data-value="4"> 4 </div>
-				<div class="button number" data-value="5"> 5 </div>
-				<div class="button number" data-value="6"> 6 </div>
-				<div class="button operator"  data-action="sub"> - </div>
-			</div>
+				</div>
 
-			<div class="row">
-				<div class="button number"  data-value="1"> 1 </div>
-				<div class="button number"  data-value="2"> 2 </div>
-				<div class="button number"  data-value="3"> 3 </div>
-				<div class="button operator"  data-action="add"> + </div>
-			</div>
+				
+				<div class="main_field">
 
-			<div class="row">
-				<div class="button number"  data-value="0"> 0 </div>
-				<div class="button number"  data-value="." id="dot"> . </div>
-				<div class="button" id="sign"> &#177; </div>
-				<div class="button" id="eq"> = </div>
+					<div class="row1">
+						<div class="screen" id="screen"></div>
+					</div>
+
+					<div class="row">
+						<div class="button" id="C"> С </div>
+						<div class="button" id="lt"> &lt;= </div>
+						<div class="button" id="rad"> &radic; </div>
+						<div class="button operator" data-action="div"> &#247; </div>
+					</div>
+
+					<div class="row">
+						<div class="button number" data-value="7"> 7 </div>
+						<div class="button number" data-value="8"> 8 </div>
+						<div class="button number" data-value="9"> 9 </div>
+						<div class="button operator" data-action="mul"> &#215; </div>
+					</div>
+
+					<div class="row">
+						<div class="button number" data-value="4"> 4 </div>
+						<div class="button number" data-value="5"> 5 </div>
+						<div class="button number" data-value="6"> 6 </div>
+						<div class="button operator"  data-action="sub"> - </div>
+					</div>
+
+					<div class="row">
+						<div class="button number"  data-value="1"> 1 </div>
+						<div class="button number"  data-value="2"> 2 </div>
+						<div class="button number"  data-value="3"> 3 </div>
+						<div class="button operator"  data-action="add"> + </div>
+					</div>
+
+					<div class="row">
+						<div class="button number"  data-value="0"> 0 </div>
+						<div class="button number"  data-value="." id="dot"> . </div>
+						<div class="button" id="sign"> &#177; </div>
+						<div class="button" id="eq"> = </div>
+					</div>
+
+				</div>
+
+				<div class="right_field">
+
+					<div class="col">
+						<div class="button numeral_system" id="toBinary"> 0b </div>
+						<div class="button bitwise" id="bitwiseAnd"> & </div>
+						<div class="button bitwise" id="bitwiseOr"> | </div>
+						<div class="button bitwise" id="bitwiseXor"> ^ </div>
+						<div class="button bitwise" id="bitwiseNot"> ~ </div>
+					</div>
+
+					<div class="col">
+						<div class="button numeral_system" id="toHexadecimal "> 0x </div>
+						<div class="button numeral_system" id="toOctal "> 0o </div>
+						<div class="button bitwise" id="leftShift"> << </div>
+						<div class="button bitwise" id="rightShift"> >> </div>
+						<div class="button bitwise" id="unsignedRightShift"> >>> </div>
+					</div>
+
+				</div>
+
 			</div>
 
 		</div>

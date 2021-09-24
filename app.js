@@ -69,10 +69,27 @@ buttonEq.addEventListener('click', event =>{
         case 'div':
             screen.textContent = num1 / num2
             break
+        case 'power':
+            screen.textContent = num1 ** num2
+            break
+        case 'log':
+            screen.textContent = getBaseLog(num1, num2)
+            break
+        case 'remainder':
+            screen.textContent = num1 % num2
+            break
+        case 'tenPow':
+            screen.textContent = num1 * (10 ** num2)
+            break
     }
      num1 = null
      num2 = null
      action = null
+
+     function getBaseLog(x, y) {
+        return Math.log(y) / Math.log(x);
+      }
+      
 })
 // запоминает новое значение с экрана во вторую переменную, выбирает действие, производит действие над переменными и заносит результат на экран 
 
